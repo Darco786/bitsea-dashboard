@@ -6,3 +6,8 @@ html{
     min-height: 100vh;
     background: #0E1128;
 }
+.nft-pro{
+    width: auto;
+    height: 100%;
+    max-width: unset !important;
+}
