@@ -16,11 +16,11 @@ function NftProfile() {
           <div>
             <div className="flex justify-between pb-4">
               {" "}
-              <h1 className="text-white">BTSEA PUNKS</h1>
-              <p className="text-white opacity-[0.5]">#2075</p>
+              <h1 className="text-white head-txt">BTSEA PUNKS</h1>
+              <p className="text-white opacity-[0.5] text-xl font-[400]">#2075</p>
             </div>
 
-            <p className="text-white opacity-[0.5] pb-4">
+            <p className="text-white opacity-[0.5] pb-4 text-xs font-[400]">
               Lorem ipsum dolor sit amet consectetur. Risus ut id velit
               hendrerit nunc tristique non malesuada malesuada. Eu lacus sed
               imperdiet elementum ipsum duis at ridiculus rhoncus. Lorem ipsum
@@ -31,10 +31,10 @@ function NftProfile() {
 
             <div>
               <div className="flex justify-between">
-                <div className=" flex justify-around gap-6">
+                <div className=" flex justify-around gap-6 pb-4 pt-2">
                   <img src={Avatar} alt="" />
                   <div className="">
-                    <p>Owned by</p>
+                    <p className="text-white text-sm font-[700]">Owned by</p>
                     <span>Amirhossein Rahmani</span>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ function NftProfile() {
               </div>
             </div>
 
-            <div className="flex">
+            <div className="flex justify-around">
                 <a href="/">Buy Now</a>
                 <a href="/">Make Offer</a>
             </div>

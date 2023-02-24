@@ -11,3 +11,12 @@ html{
     height: 100%;
     max-width: unset !important;
 }
+.head-txt{
+
+font-size: 32px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+
+}
