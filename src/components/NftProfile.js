@@ -28,9 +28,13 @@ export default function NftProfile() {
 
             {/* Product info */}
             <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+              <div className="flex item-center justify-between">
+
               <h1 className="text-3xl font-bold tracking-tight text-gray-100">
                 BTSEA PUNKS
               </h1>
+              <h2 className="text-lg tracking-tight text-gray-400">#2075</h2>
+              </div>
 
               <div className="mt-6">
                 <div className="space-y-6 text-base text-gray-500">
@@ -121,8 +125,8 @@ export default function NftProfile() {
           <div>
             <div className="flex mb-5">
               {buttons.map((text, i) => (
-                <a
-                  href="/Wallet"
+                <button
+                 
                   className={`whitespace-nowrap rounded-full cursor-pointer ${
                     i == 0
                       ? "border-2 border-solid border-[#9B02FB]"
@@ -130,7 +134,7 @@ export default function NftProfile() {
                   } py-2 px-6 bg-gradient-to-b mx-1  to-[#1B1E4C] from-[#141532] text-sm text-white hover:text-gray-100`}
                 >
                   {text}
-                </a>
+                </button>
               ))}
             </div>
             <div>
