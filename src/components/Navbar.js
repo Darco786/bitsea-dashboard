@@ -3,6 +3,7 @@ import logoImg from "../assets/logo.png";
 import bellIcon from "../assets/icons/Vector.png";
 import searchIcon from "../assets/icons/Vector (1).png";
 import avatar from "../assets/icons/avatar.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let [openNav, setOpenNav] = useState(true);
@@ -78,7 +79,12 @@ const Navbar = () => {
                 >
                   Explore
                 </a>
-
+                <Link
+                  to='/nft-profile'
+                  className="text-[#870BE5] hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Nft-profile
+                </Link>
                 <a
                   href="#"
                   className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
