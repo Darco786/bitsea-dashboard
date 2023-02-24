@@ -1,7 +1,4 @@
 import React from "react";
-import NftPro from "../assets/nft-pro.png";
-import Avatar from "../assets/avatar.png";
-import { IoHeartCircle } from "react-icons/io5";
 import { Tab } from "@headlessui/react";
 import img from "../assets/nft (1).png";
 import heartIcon from "../assets/icons/heart.png";
@@ -14,22 +11,15 @@ export default function NftProfile() {
         {/* Product */}
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           {/* Image gallery */}
-          <Tab.Group as="div" className="flex flex-col-reverse">
-            {/* Image selector */}
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none"></div>
+          {/* Image selector */}
 
-            <Tab.Panels className="aspect-w-1 aspect-h-1 w-full">
-              <Tab.Panel>
-                <img
-                  src={img}
-                  alt="s"
-                  height={"2"}
-                  width={"2"}
-                  className="h-full w-full r sm:rounded-lg"
-                />
-              </Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
+          <img
+            src={img}
+            alt="s"
+            height={"2"}
+            width={"2"}
+            className="h-full w-full r sm:rounded-lg"
+          />
 
           {/* Product info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
@@ -121,7 +111,13 @@ export default function NftProfile() {
           </div>
         </div>
       </div>
-
+      <div className="mt-14 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+        <div></div>
+      </div>
       {/* </div> */}
     </main>
   );
