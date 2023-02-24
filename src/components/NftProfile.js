@@ -1,9 +1,13 @@
+import React from "react";
+import NftPro from "../assets/nft-pro.png";
+import Avatar from "../assets/avatar.png";
+import { IoHeartCircle } from "react-icons/io5";
 import { Tab } from "@headlessui/react";
 import img from "../assets/nft (1).png";
 import heartIcon from "../assets/icons/heart.png";
 import avatarImg from "../assets/avatar.png";
 
-export default function ProductDetails() {
+export default function NftProfile() {
   return (
     <main className="mx-auto max-w-7xl  bg-opacity-60 mb-8">
       <div className="mx-auto max-w-2xl lg:max-w-none pt-10">
