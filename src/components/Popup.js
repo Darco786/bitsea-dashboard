@@ -1,5 +1,5 @@
 import React from "react";
-
+import {BsCheckCircleFill} from 'react-icons/bs'
 import "./Modal.css";
 import qrImg from "../assets/qr.png";
 import popImg from "../assets/pop.png";
@@ -69,7 +69,7 @@ function Model({ setIsModal }) {
                       </div>
                       <div className="flex justify-between p-4 bg-[#2E3154] rounded-[55px] h-[40px] items-center">
                         <h2 className="text-white text-sm font-[500]">@hdh552356fjdjhd2154djndmjnd6325</h2>
-                        <p>Ver</p>
+                        <p className="text-[#8F06ED] text-xl"><BsCheckCircleFill/></p>
                       </div>
                     </div>
                   </div>
