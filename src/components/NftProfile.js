@@ -1,9 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import NftPro from "../assets/nft-pro.png";
 import Avatar from "../assets/avatar.png";
 import { IoHeartCircle } from "react-icons/io5";
+import Model from "./Popup";
 function NftProfile() {
+
+    const [isModal, setIsModal] = useState(false);
   return (
+<>
+    
     <section className="mt-20">
       <div className="container">
         <div className="flex main-box justify-between gap-16">
@@ -48,13 +53,15 @@ function NftProfile() {
             </div>
 
             <div className="flex justify-around">
-                <a href="/">Buy Now</a>
+                <button onClick={() => setIsModal(true)}>Buy Now</button>
                 <a href="/">Make Offer</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    {isModal && <Model setIsModal={setIsModal} />}
+    </>
   );
 }
 
