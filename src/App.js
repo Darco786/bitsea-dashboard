@@ -1,11 +1,17 @@
-import Cards from "./components/Cards";
-import Layout from "./Layout";
+import {BrowserRouter as Router,Routes, Route} from 'react-router-dom'
+import Home from './Pages/Home';
+
 
 function App() {
   return (
-   <Layout>
-      <Cards/>
-   </Layout>
+<>  <Router>
+    <Routes>
+    <Route  exact path='/' element={<Home/>}  />
+
+    </Routes>
+    </Router></>
+  
+   
   );
 }
 
