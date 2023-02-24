@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import NftPro from "../assets/nft-pro.png";
 import Avatar from "../assets/avatar.png";
 import { IoHeartCircle } from "react-icons/io5";
@@ -6,9 +6,12 @@ import { Tab } from "@headlessui/react";
 import img from "../assets/nft (1).png";
 import heartIcon from "../assets/icons/heart.png";
 import avatarImg from "../assets/avatar.png";
+import Model from "./Popup";
 
 export default function NftProfile() {
+    const [isModal, setIsModal] = useState(false);
   return (
+    <>
     <main className="mx-auto max-w-7xl  bg-opacity-60 mb-8">
       <div className="mx-auto max-w-2xl lg:max-w-none pt-10">
         {/* Product */}
@@ -107,6 +110,7 @@ export default function NftProfile() {
             </div>
             <div className="mt-6 space-x-2">
               <button
+              onClick={() => setIsModal(true)}
                 className={`whitespace-nowrap rounded-full cursor-pointer w-[58%]  py-2 px-6 bg-gradient-to-t  to-[#22233B] from-[#1B1E4C] text-sm text-white font-bold hover:text-gray-100`}
               >
                 Buy Now
@@ -124,5 +128,7 @@ export default function NftProfile() {
 
       {/* </div> */}
     </main>
+    {isModal && <Model setIsModal={setIsModal} />}
+    </>
   );
 }
