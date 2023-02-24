@@ -1,5 +1,6 @@
 import React from "react";
 import {BsCheckCircleFill} from 'react-icons/bs'
+import {IoCopySharp} from 'react-icons/io5'
 import "./Modal.css";
 import qrImg from "../assets/qr.png";
 import popImg from "../assets/pop.png";
@@ -108,7 +109,7 @@ function Model({ setIsModal }) {
                       <p className="text-sm text-white font-[500] opacity-50 mb-5">Address</p>
                       <div className="flex justify-between p-4 bg-[#2E3154] rounded-[55px] h-[40px] items-center">
                         <h1 className="text-white text-sm font-[500]">@hdh552356fjdjhd2154djndmjnd6325</h1>
-                        <p>copy</p>
+                        <p className="text-[#8F06ED] text-xl"><IoCopySharp/></p>
                       </div>
                     </div>
                   </div>

@@ -122,28 +122,28 @@ const Navbar = () => {
             className="bg-[#14142F] text-white block px-3 py-2 rounded-md text-base font-medium"
             aria-current="page"
           >
-            Dashboard
+           Home
           </a>
 
           <a
             href="#"
             className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
           >
-            Team
+           Explore
           </a>
+
+          <Link
+            to='/nft-profile'
+            className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
+          >
+           Nft-Profile
+          </Link>
 
           <a
             href="#"
             className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
           >
-            Projects
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Calendar
+           Setting
           </a>
         </div>
       </div>
