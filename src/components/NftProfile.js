@@ -35,7 +35,7 @@ function NftProfile() {
                   <img src={Avatar} alt="" />
                   <div className="">
                     <p className="text-white text-sm font-[700]">Owned by</p>
-                    <span className="">Amirhossein Rahmani</span>
+                    <span className="text-white opacity-[0.5] text-sm font-[400]">Amirhossein Rahmani</span>
                   </div>
                 </div>
                 <div className="flex items-center">
