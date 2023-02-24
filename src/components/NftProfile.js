@@ -35,11 +35,11 @@ function NftProfile() {
                   <img src={Avatar} alt="" />
                   <div className="">
                     <p className="text-white text-sm font-[700]">Owned by</p>
-                    <span>Amirhossein Rahmani</span>
+                    <span className="">Amirhossein Rahmani</span>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <a href="/">0.80 BTC</a>
+                  <a href="/" className="btc-btn">0.80 BTC</a>
                   <span>
                     <IoHeartCircle />
                   </span>

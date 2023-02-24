@@ -20,3 +20,9 @@ letter-spacing: 0em;
 text-align: left;
 
 }
+
+.btc-btn{
+    background: linear-gradient(90deg, #9504F3 0%, #4129A1 100%);
+border-radius: 60px;
+padding: 8px 31px 8px 31px;
+}
