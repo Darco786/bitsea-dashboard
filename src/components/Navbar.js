@@ -6,7 +6,7 @@ import avatar from "../assets/icons/avatar.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  let [openNav, setOpenNav] = useState(true);
+  let [openNav, setOpenNav] = useState(false);
   return (
     <nav className="bg-transparent py-2">
       <div className="mx-auto">
