@@ -36,7 +36,7 @@ function Model({ setIsModal }) {
                     />
                   </div>
 
-                  <div className="mt-10  px-4 sm:mt-16 sm:px-0 lg:mt-0">
+                  <div className="mt-10 w-[63%]  px-4 sm:mt-16 sm:px-0 lg:mt-0">
                     <div className="  flex  justify-between ">
                       <h1 className="text-[20px] font-bold tracking-tight text-gray-100">
                         BTSEA PUNKS
@@ -76,7 +76,7 @@ function Model({ setIsModal }) {
                 </div>
 
                 <div className="flex justify-between">
-                  <div className="">
+                  <div className=" mt-7 w-[62%]">
                     <div className="flex justify-between mb-7">
                       <div>
                         <h1 className="text-xl text-white font-[700]">Send funds to escrow</h1>
