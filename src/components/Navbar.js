@@ -99,34 +99,7 @@ const Navbar = () => {
 
       <div className={openNav ? "sm:hidden block" : "hidden"} id="mobile-menu">
         <div className="space-y-1 pt-2 pb-3">
-          <a
-            href="#"
-            className="bg-[#14142F] text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
-          >
-           Home
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
-          >
-           Explore
-          </a>
-
-          <Link
-            to='/nft-profile'
-            className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
-          >
-           Nft-Profile
-          </Link>
-
-          <a
-            href="#"
-            className="text-gray-300  hover:text-white hover:bg-[#14142F] block px-3 py-2 rounded-md text-base font-medium"
-          >
-           Setting
-          </a>
+         
         </div>
       </div>
     </nav>
