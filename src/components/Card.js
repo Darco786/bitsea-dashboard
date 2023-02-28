@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import heartIcon from "../assets/icons/heart.png";
 
 const Card = ({img}) => {
   return (
    
       <section className="font-outfit bg-[#161933] p-3 rounded-xl shadow-2xl w-auto">
-        <a href="#" className="group block relative rounded-md overflow-hidden">
+        <Link to="/nft-profile" className="group block relative rounded-md overflow-hidden">
           <img src={img} alt="equilibrium" className="w-full" />
-        </a>
+        </Link>
 
         <div className="flex justify-between items-center">
           <h1>
-            <a
-              href="#"
+            <Link
+              to="/nft-profile"
               className="block text-white mt-3 font-semibold text-lg hover:text-cyan"
             >
               Equilibrium
-            </a>
+            </Link>
           </h1>
           <div className="mt-2 items-center text-white opacity-50 text-sm text-soft-blue whitespace-nowrap">
             Current Bid

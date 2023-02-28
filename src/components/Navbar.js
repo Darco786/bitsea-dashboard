@@ -72,32 +72,7 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:ml-24 sm:block">
               <div className="flex space-x-4">
-                <Link
-                  to='/'
-                  className=" text-white px-3 py-2 rounded-md text-sm font-medium"
-                  aria-current="page"
-                >
-                  Home
-                </Link>
-
-                <a
-                  href="#"
-                  className="text-[#870BE5] hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Explore
-                </a>
-                <Link
-                  to='/nft-profile'
-                  className="text-[#870BE5] hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Nft-profile
-                </Link>
-                <a
-                  href="#"
-                  className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Settings
-                </a>
+             
               </div>
             </div>
           </div>
