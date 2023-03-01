@@ -78,7 +78,7 @@ const Navbar = () => {
           </div>
           <div className="space-x-2 absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className=" px-3 hidden md:flex items-center mx-auto  bg-gradient-to-b from-[#14142F] to-[#232757] h-10 rounded-md">
-              <img src={searchIcon} />
+              <img src={searchIcon} alt=""/>
 
               <input
                 className="text-white w-full bg-transparent h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
@@ -88,10 +88,10 @@ const Navbar = () => {
               />
             </div>
             <button className="h-9 w-9 bg-gradient-to-b from-[#14142F] to-[#232757] rounded-lg border border-gray-500">
-              <img src={bellIcon} className="mx-auto opacity-80" />
+              <img src={bellIcon} className="mx-auto opacity-80" alt="" />
             </button>
             <button className="h-9 w-9 bg-gradient-to-b from-[#14142F] to-[#232757] rounded-lg border border-gray-500">
-              <img src={avatar} className="mx-auto h-7 w-7" />
+              <img src={avatar} className="mx-auto h-7 w-7" alt=""/>
             </button>
           </div>
         </div>
