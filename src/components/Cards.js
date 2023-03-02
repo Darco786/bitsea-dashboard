@@ -1,24 +1,22 @@
 import React from "react";
 import Card from "./Card";
 import filterIcon from "../assets/icons/filter.png";
-import nftImg1 from "../assets/nft (1).png";
-import nftImg2 from "../assets/nft (2).png";
-import nftImg3 from "../assets/nft (3).png";
-import nftImg4 from "../assets/nft (4).png";
-import nftImg5 from "../assets/nft5.png";
-import nftImg6 from "../assets/nft6.png";
-import nftImg7 from "../assets/nft7.png";
-import nftImg8 from "../assets/nft8.png";
+import nftImg1 from "../assets/nft (1).jpg";
+import nftImg2 from "../assets/nft (1).png";
+import nftImg3 from "../assets/nft (2).jpg";
+import nftImg4 from "../assets/nft (3).png";
+import nftImg5 from "../assets/nft (4).png";
+import nftImg6 from "../assets/nft (5).png";
+import nftImg7 from "../assets/nft (6).png";
 
 let Nfts = [
-  nftImg1,
-  nftImg2,
-  nftImg3,
-  nftImg4,
-  nftImg5,
-  nftImg6,
-  nftImg7,
-  nftImg8,
+  { id: 23232, img: nftImg1, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg2, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg3, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg4, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg5, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg6, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg7, title: "Equilibrium", price: 0.08 },
 ];
 let buttons = ["On Sale", "Top", "Art", "Photography", "Game"];
 const Cards = () => {
@@ -55,8 +53,8 @@ const Cards = () => {
       </div>
       <div className="mt-10 mx-auto">
         <div className="my-1 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-          {Nfts.map((img) => (
-            <Card img={img} />
+          {Nfts.map((nftData) => (
+            <Card nftData={nftData} />
           ))}
         </div>
       </div>

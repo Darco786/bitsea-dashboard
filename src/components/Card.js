@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import heartIcon from "../assets/icons/heart.png";
 
-const Card = ({img}) => {
+const Card = ({nftData: {id, img, title, price}}) => {
   return (
    
-      <section className="font-outfit bg-[#161933] p-3 rounded-xl shadow-2xl w-auto">
+      <section className="font-outfit bg-[#161933] p-3 rounded-xl shadow-2xl w-auto h-auto">
         <Link to="/nft-profile" className="group block relative rounded-md overflow-hidden">
-          <img src={img} alt="equilibrium" className="w-full" />
+          <img src={img} alt="equilibrium" className="w-full h-auto" />
         </Link>
 
         <div className="flex justify-between items-center">
@@ -16,7 +16,7 @@ const Card = ({img}) => {
               to="/nft-profile"
               className="block text-white mt-3 font-semibold text-lg hover:text-cyan"
             >
-              Equilibrium
+              {title}
             </Link>
           </h1>
           <div className="mt-2 items-center text-white opacity-50 text-sm text-soft-blue whitespace-nowrap">
@@ -28,10 +28,10 @@ const Card = ({img}) => {
             href="#"
             className="block text-white  font-semibold text-base hover:text-cyan"
           >
-            #432211
+            #{id}
           </a>
           <div className="text-[#382C9A] font-bold  text-base  whitespace-nowrap">
-            0.80 BTC
+            {price} BTC
           </div>
         </div>
         <div className="flex justify-between items-center mt-5">

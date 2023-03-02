@@ -17,7 +17,9 @@ const Navbar = () => {
               className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
-              onClick={()=>{setOpenNav(!openNav)}}
+              onClick={() => {
+                setOpenNav(!openNav);
+              }}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -52,33 +54,29 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <Link to='/'>
+              <Link to="/">
+                <img
+                  className="block h-8 w-auto lg:hidden"
+                  src={logoImg}
+                  alt="Your Company"
+                />
+              </Link>
 
-              <img
-                className="block h-8 w-auto lg:hidden"
-                src={logoImg}
-                alt="Your Company"
-              />
+              <Link to="/">
+                <img
+                  className="hidden h-8 w-auto lg:block"
+                  src={logoImg}
+                  alt="Your Company"
+                />
               </Link>
-             
-              <Link to='/'>
-              <img
-                className="hidden h-8 w-auto lg:block"
-                src={logoImg}
-                alt="Your Company"
-              />
-              </Link>
-             
             </div>
             <div className="hidden sm:ml-24 sm:block">
-              <div className="flex space-x-4">
-             
-              </div>
+              <div className="flex space-x-4"></div>
             </div>
           </div>
           <div className="space-x-2 absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className=" px-3 hidden md:flex items-center mx-auto  bg-gradient-to-b from-[#14142F] to-[#232757] h-10 rounded-md">
-              <img src={searchIcon} alt=""/>
+              <img src={searchIcon} alt="" />
 
               <input
                 className="text-white w-full bg-transparent h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
@@ -87,20 +85,25 @@ const Navbar = () => {
                 placeholder="Search by creator or item..."
               />
             </div>
-            <button className="h-9 w-9 bg-gradient-to-b from-[#14142F] to-[#232757] rounded-lg border border-gray-500">
-              <img src={bellIcon} className="mx-auto opacity-80" alt="" />
+            <button className="h-9">
+              {/* <img src={bellIcon} className="mx-auto opacity-80" alt="" />
             </button>
             <button className="h-9 w-9 bg-gradient-to-b from-[#14142F] to-[#232757] rounded-lg border border-gray-500">
-              <img src={avatar} className="mx-auto h-7 w-7" alt=""/>
+              <img src={avatar} className="mx-auto h-7 w-7" alt=""/> */}
+              <a
+                href="/Wallet"
+                className={`whitespace-nowrap rounded-full cursor-pointer 
+                  border-2 border-solid border-[#9B02FB] hidden md:flex py-2 px-6 bg-gradient-to-b  to-[#1B1E4C] from-[#141532] text-sm text-white hover:text-gray-100`}
+              >
+                connect wallet
+              </a>
             </button>
           </div>
         </div>
       </div>
 
       <div className={openNav ? "sm:hidden block" : "hidden"} id="mobile-menu">
-        <div className="space-y-1 pt-2 pb-3">
-         
-        </div>
+        <div className="space-y-1 pt-2 pb-3"></div>
       </div>
     </nav>
   );
