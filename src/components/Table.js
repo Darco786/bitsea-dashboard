@@ -79,6 +79,7 @@ export default function Table() {
                         <img
                           src={person.image}
                           className="h-12 w-12 rounded-full mr-3"
+                          alt=""
                         />
                         <p className="overflow-ellipsis">{person.name}</p>
                       </td>

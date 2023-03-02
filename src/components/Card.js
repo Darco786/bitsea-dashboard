@@ -24,12 +24,12 @@ const Card = ({nftData: {id, img, title, price}}) => {
           </div>
         </div>
         <div className="flex justify-between items-center">
-          <a
-            href="#"
+          <Link
+            to="/nft-profile"
             className="block text-white  font-semibold text-base hover:text-cyan"
           >
             #{id}
-          </a>
+          </Link>
           <div className="text-[#382C9A] font-bold  text-base  whitespace-nowrap">
             {price} BTC
           </div>
@@ -50,7 +50,7 @@ const Card = ({nftData: {id, img, title, price}}) => {
             </a>
           </div>
           <div className="h-9 w-9 p-2 flex justify-center items-center rounded-full bg-[#ffffff0d] cursor-pointer">
-            <img src={heartIcon} />
+            <img src={heartIcon}  alt=''/>
           </div>
         </div>
       </section>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logoImg from "../assets/logo.png";
-import bellIcon from "../assets/icons/Vector.png";
+// import bellIcon from "../assets/icons/Vector.png";
 import searchIcon from "../assets/icons/Vector (1).png";
-import avatar from "../assets/icons/avatar.png";
+// import avatar from "../assets/icons/avatar.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

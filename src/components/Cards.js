@@ -1,22 +1,24 @@
 import React from "react";
 import Card from "./Card";
 import filterIcon from "../assets/icons/filter.png";
-import nftImg1 from "../assets/nft (1).jpg";
+import nftImg1 from "../assets/nft (2).png";
 import nftImg2 from "../assets/nft (1).png";
-import nftImg3 from "../assets/nft (2).jpg";
+import nftImg3 from "../assets/nft (2).webp";
 import nftImg4 from "../assets/nft (3).png";
 import nftImg5 from "../assets/nft (4).png";
 import nftImg6 from "../assets/nft (5).png";
 import nftImg7 from "../assets/nft (6).png";
+import nftImg8 from "../assets/bitbear.webp";
 
 let Nfts = [
-  { id: 23232, img: nftImg1, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg2, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg3, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg4, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg5, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg6, title: "Equilibrium", price: 0.08 },
-  { id: 23232, img: nftImg7, title: "Equilibrium", price: 0.08 },
+  { id: 23232, img: nftImg1, title: "CyberPepes", price: 0.021 },
+  { id: 23232, img: nftImg2, title: "Ordinal Egg", price: 0.32 },
+  { id: 23232, img: nftImg3, title: "Ordinal Artifacts", price: 0.034 },
+  { id: 23232, img: nftImg4, title: "OrdinalFace", price: 0.038 },
+  { id: 23232, img: nftImg5, title: "OrdinalPunk", price: 0.020 },
+  { id: 23232, img: nftImg6, title: "OrdinalSmokes", price: 0.028 },
+  { id: 23232, img: nftImg7, title: "DarkOrdinauts", price: 0.0070 },
+  { id: 23232, img: nftImg8, title: "BitDefender", price: 0.021 },
 ];
 let buttons = ["On Sale", "Top", "Art", "Photography", "Game"];
 const Cards = () => {
